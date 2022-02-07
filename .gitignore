@@ -1,0 +1,7 @@
+
+# Ignore dynaconf secret files
+.secrets.*
+.esphome
+secrets.yaml
+.venv
+__pycache__*

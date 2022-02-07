@@ -1,0 +1,63 @@
+dynaconf_merge = true
+[default]
+[default.aws]
+aws_access_key_id = "*************************"
+aws_secret_access_key = "*************************"
+
+[default.mqtt]
+hostname = "SET THIS TO YOUR MQTT HOST"
+# password = "YOUR PASSWORD (if any, or just comment out)"
+# username = "YOUR USERNAME (if any, or just comment out"
+
+[[default.actions]]
+action = "LogStatusAction"
+topic = "flashboard/sensor/#"
+
+[[default.actions]]
+action = "LogTagAction"
+topic = "flashboard/tag/+"
+
+[[default.actions]]
+action = "SpeakTagAction"
+args = {tag_id = "AA-BB-CC-DD", text = "the"}
+topic = "flashboard/tag/+"
+
+[[default.actions]]
+action = "SpeakTagAction"
+args = {tag_id = "AA-BB-CC-DD", text = "big"}
+topic = "flashboard/tag/+"
+
+[[default.actions]]
+action = "SpeakTagAction"
+args = {tag_id = "AA-BB-CC-DD", text = "blue"}
+topic = "flashboard/tag/+"
+
+[[default.actions]]
+action = "SpeakTagAction"
+args = {tag_id = "AA-BB-CC-DD", text = "fish"}
+topic = "flashboard/tag/+"
+
+[[default.actions]]
+action = "SpeakTagAction"
+args = {tag_id = "AA-BB-CC-DD", text = "is"}
+topic = "flashboard/tag/+"
+
+[[default.actions]]
+action = "SpeakTagAction"
+args = {tag_id = "AA-BB-CC-DD", text = "on"}
+topic = "flashboard/tag/+"
+
+[[default.actions]]
+action = "SpeakTagAction"
+args = {tag_id = "AA-BB-CC-DD", text = "the"}
+topic = "flashboard/tag/+"
+
+[[default.actions]]
+action = "SpeakTagAction"
+args = {tag_id = "AA-BB-CC-DD", text = "table"}
+topic = "flashboard/tag/+"
+
+[[default.actions]]
+action = "SpeakSentenceAction"
+args = {tag_id = "AA-BB-CC-DD", text = " ", clear_context = true}
+topic = "flashboard/tag/+"

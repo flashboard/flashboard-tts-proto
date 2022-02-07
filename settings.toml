@@ -1,0 +1,16 @@
+[default]
+cache_size = 122880
+topic = "flashboard/#"
+
+    [default.aws]
+    # check which regions support Polly https://docs.aws.amazon.com/general/latest/gr/pol.html
+    region_name = "us-west-2"
+
+    [default.polly]
+    # https://docs.aws.amazon.com/polly/latest/dg/voicelist.html
+    voice_id = "Joanna" 
+    output_format = "mp3"
+    engine = "neural"
+
+    [default.mqtt]
+    hostname = "localhost"
